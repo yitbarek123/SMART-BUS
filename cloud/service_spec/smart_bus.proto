@@ -1,0 +1,23 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+
+
+
+message checkTicketOutput {
+    string response=1;
+}
+
+message checkTicketInputs {
+    string ticket_id=1;
+    string device_id=2;
+}
+
+
+service SmartBus {
+
+    rpc checkTicket(checkTicketInputs) returns (checkTicketOutput) {}
+
+    rpc checkTicketOff(checkTicketInputs) returns (checkTicketOutput) {}
+
+}
+
