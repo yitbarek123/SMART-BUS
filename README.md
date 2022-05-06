@@ -29,9 +29,9 @@
 ## RASPBERRY-PI
 
 ``` 
+    git clone https://github.com/yitbarek123/SMART-BUS.git
     cd SMART-BUS
     cd cloud
-    git clone https://github.com/yitbarek123/SMART-BUS.git
     cd raspberry-pi
     python3 sensors.py
 
